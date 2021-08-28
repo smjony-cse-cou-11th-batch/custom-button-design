@@ -1,0 +1,54 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+button.btn.btn-custom {
+    margin-left: 535px;
+    margin-top: 150px;
+    padding: 15px 70px;
+    font-size: 25px;
+    color: aqua;
+    position: relative;
+    z-index: 1;
+}
+
+
+button.btn.btn-custom:hover {
+    color: orange;
+}
+
+button.btn.btn-custom:before {
+    content: " ";
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background: #ACDAFF;
+    top: -100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+button.btn.btn-custom:after {
+    content: " ";
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: #17A05E;
+    bottom: -100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+button.btn.btn-custom:hover:before {
+    top: 0;
+    opacity: 1;
+}
+
+button.btn.btn-custom:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
